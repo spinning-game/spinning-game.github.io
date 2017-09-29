@@ -1,0 +1,29 @@
+{
+    "images": {
+        "symbols": [{
+            "id": 1, 
+            "name": "WILD",
+            "path": "../src/assets/img/SYM1.png"
+        },{
+            "id": 2,
+            "name": "Strawberry",
+            "path": "../src/assets/img/SYM3.png"
+        },{
+            "id": 3,
+            "name": "Pineapple",
+            "path": "../src/assets/img/SYM4.png"
+        },{
+            "id": 4,
+            "name": "Lemon",
+            "path": "../src/assets/img/SYM5.png"
+        },{
+            "id": 5,
+            "name": "Gren Apple",
+            "path": "../src/assets/img/SYM6.png"
+        },{
+            "id": 6,
+            "name": "Grape",
+            "path": "../src/assets/img/SYM7.png"
+        }]
+    }
+}

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Spinning game</title>
+    <meta name="description" content="Spining Game">
+    <meta name="keywords" content="Spining,Game,Play">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <!-- <link rel="icon" type="image/x-icon" href="assets/favicon.ico"> -->
+</head>
+
+<body>
+    <div class="container float-lef">
+
+        <div id="game">
+            <h2 id="choose">Choose a symbol and click the button to spin</h2>
+            <div class="float-left">
+                <div id="symbols">
+                    <canvas id="symbol-canvas" width="240" height="300">
+                    </canvas>
+                </div>
+                <div id="result-container" class="float-left">
+                    
+                </div>
+            </div>
+
+            <form id="spin-form" class="float-left">
+                <div class="row float-left">
+                    <select id="select-symbol" class="float-left" onchange="onSelectSymbol()">
+                        <option value="">Select here</option>
+                    </select>
+                </div>
+                <div class="row float-left">
+                    <button type="button" id="btn-spin" class="float-left" onclick="onSpin()">
+                        <img id="btn-spin-img" src="./assets/img/BTN_Spin_d.png"/>
+                    </button>
+                </div>
+            </form>
+
+        </div>
+        <div id="score">
+            <div id="total-score" class="float-left">
+                <p id="total-spins"></p>
+                <p id="total-wins"></p>
+            </div>
+            <div id="session-score" class="float-left">
+                <p id="session-spins"></p>
+                <p id="session-wins"></p>
+            </div>
+            <button type="button" class="reset" onclick="Storage.resetSession()">Reset session</button>
+            <button type="button" class="reset" onclick="Storage.resetTotals()">Reset totals</button>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./js/ajax.js"></script>
+    <script type="text/javascript" src="./js/Symbol.js"></script>
+    <script type="text/javascript" src="./js/storageUtil.js"></script>
+    <script type="text/javascript" src="./js/game.js"></script>
+</body>
+
+</html>
