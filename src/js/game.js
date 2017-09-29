@@ -12,6 +12,7 @@ function main() {
     var btnSpin = document.getElementById('btn-spin');
     var btnImage = document.getElementById('btn-spin-img');
     var resultContainer = document.getElementById('result-container');
+    var loader = document.getElementById('loader');
 
     btnSpin.disabled = true;
 
@@ -21,7 +22,7 @@ function main() {
     });
 
     var initImages = function (images) {
-        var maxY = images.length * 145;
+        var maxY = images.length * 165;
 
         for (var i = 0; i < images.length; i++) {
             var y = i * 155;
@@ -32,15 +33,18 @@ function main() {
             //
             createSelectSymbolOption(symbol);
         }
+
+        //remove loader
+        loader.parentNode.removeChild(loader);
     };
 
     var canSpin = function (can) {
         if (can) {
             btnSpin.disabled = false;
-            btnImage.src = 'assets/img/BTN_Spin.png';
+            btnImage.src = 'src/assets/img/BTN_Spin.png';
         } else {
             btnSpin.disabled = true;
-            btnImage.src = 'assets/img/BTN_Spin_d.png';
+            btnImage.src = 'src/assets/img/BTN_Spin_d.png';
         }
     };
 
@@ -105,7 +109,7 @@ function main() {
 
             stopSpining(symbolToWin);
 
-        }, 1000);
+        }, 1500);
     };
 
     var stopSpining = function (symbolToWin) {

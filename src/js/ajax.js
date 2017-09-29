@@ -2,7 +2,7 @@
 
 function makeGetRequest(callback) {
     var request = new XMLHttpRequest();
-    request.open('GET', 'assets/externalResources.json', true);
+    request.open('GET', 'src/assets/externalResources.json', true);
     var serverResponse = request.responseText;
 
     request.onload = function () {

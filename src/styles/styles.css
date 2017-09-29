@@ -24,6 +24,11 @@ html {
     width: 100%;
 }
 
+#loader {
+    width: 25px;
+    margin-top: 5px;
+}
+
 #game,
 #score {
     width: 500px;
@@ -31,8 +36,8 @@ html {
 }
 
 #game {
-    height: 290px;
-    margin-top: 120px;
+    height: 320px;
+    margin-top: 100px;
     border-bottom: 1px solid #69a5e1;
 }
 
@@ -47,7 +52,7 @@ html {
     width: 240px;
     border: 1px dashed #9B861E;
     overflow: hidden;
-    margin-top: 35px;
+    margin-top: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
 }
@@ -60,7 +65,7 @@ html {
     width: 240px;
     height: 34px;
     overflow: hidden;
-    margin-top: 35px;
+    margin-top: 20px;
     margin-left: 30px;
     border: 1px solid #ccc;
 }
@@ -101,38 +106,6 @@ html {
 
 #btn-spin:enabled:active {
     transform: translateY(4px);
-}
-
-.animate {
-    animation-duration: 1s;
-    animation-fill-mode: both;
-}
-
-@keyframes bounceInLeft {
-    from,
-    60%,
-    75%,
-    90%,
-    to {
-        animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
-    }
-    0% {
-        opacity: 0;
-        transform: translate3d(-3000px, 0, 0);
-    }
-    60% {
-        opacity: 1;
-        transform: translate3d(25px, 0, 0);
-    }
-    75% {
-        transform: translate3d(-10px, 0, 0);
-    }
-    90% {
-        transform: translate3d(5px, 0, 0);
-    }
-    to {
-        transform: none;
-    }
 }
 
 .bounceInLeft {

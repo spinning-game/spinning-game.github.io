@@ -7,7 +7,8 @@
     <meta name="description" content="Spining Game">
     <meta name="keywords" content="Spining,Game,Play">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <link rel="stylesheet" href="src/styles/animation.css">
     <!-- <link rel="icon" type="image/x-icon" href="assets/favicon.ico"> -->
 </head>
 
@@ -15,14 +16,16 @@
     <div class="container float-lef">
 
         <div id="game">
-            <h2 id="choose">Choose a symbol and click the button to spin</h2>
+            <div class="row float-left">
+                <h2 id="choose">Choose a symbol and click the button to spin</h2>
+                <img src="src/assets/img/BTN_Spin.png" id="loader" alt="Loader icon" class="spin"/>
+            </div>
             <div class="float-left">
                 <div id="symbols">
                     <canvas id="symbol-canvas" width="240" height="300">
                     </canvas>
                 </div>
                 <div id="result-container" class="float-left">
-                    
                 </div>
             </div>
 
@@ -34,7 +37,7 @@
                 </div>
                 <div class="row float-left">
                     <button type="button" id="btn-spin" class="float-left" onclick="onSpin()">
-                        <img id="btn-spin-img" src="./assets/img/BTN_Spin_d.png"/>
+                        <img id="btn-spin-img" src="src/assets/img/BTN_Spin_d.png" alt="Click to spin"/>
                     </button>
                 </div>
             </form>
@@ -49,15 +52,15 @@
                 <p id="session-spins"></p>
                 <p id="session-wins"></p>
             </div>
-            <button type="button" class="reset" onclick="Storage.resetSession()">Reset session</button>
+            <button type="button" class="reset" onclick="Storage.resetSession()">Reset round</button>
             <button type="button" class="reset" onclick="Storage.resetTotals()">Reset totals</button>
         </div>
     </div>
 
-    <script type="text/javascript" src="./js/ajax.js"></script>
-    <script type="text/javascript" src="./js/Symbol.js"></script>
-    <script type="text/javascript" src="./js/storageUtil.js"></script>
-    <script type="text/javascript" src="./js/game.js"></script>
+    <script type="text/javascript" src="src/js/ajax.js"></script>
+    <script type="text/javascript" src="src/js/Symbol.js"></script>
+    <script type="text/javascript" src="src/js/storageUtil.js"></script>
+    <script type="text/javascript" src="src/js/game.js"></script>
 </body>
 
 </html>
