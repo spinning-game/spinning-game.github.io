@@ -37,7 +37,7 @@ html {
 
 #game {
     height: 320px;
-    margin-top: 100px;
+    margin-top: 80px;
     border-bottom: 1px solid #69a5e1;
 }
 
@@ -122,23 +122,43 @@ html {
     width: 50%;
 }
 
-.reset {
+
+.btn {
     margin-top: 10px;
-    background-color: #376770;
-    border: 1px solid #196cab;
     display: inline-block;
-    color: #ffffff;
     font-size: 17px;
     padding: 10px 30px;
     text-decoration: none;
-    text-shadow: 0px 1px 0px #41a5c9;
 }
 
-.reset:hover {
+.primary-btn {
+    background-color: #376770;
+    border: 1px solid #196cab;
+    color: #ffffff;
+}
+
+.primary-btn:hover {
     background-color: #1e5b8a;
 }
 
-.reset:active {
+.primary-btn:active {
     position: relative;
     top: 1px;
+}
+
+.default-btn {
+    background-color: #919EA0;
+    border: 1px solid #3D464D;
+    color: #ffffff;
+}
+
+#btn-sound {
+    padding: 0;
+    margin-top: 10px;
+    float: right;
+}
+
+#btn-sound-img {
+    width: 30px;
+    padding: 0;
 }

@@ -52,8 +52,9 @@
                 <p id="session-spins"></p>
                 <p id="session-wins"></p>
             </div>
-            <button type="button" class="reset" onclick="Storage.resetSession()">Reset round</button>
-            <button type="button" class="reset" onclick="Storage.resetTotals()">Reset totals</button>
+            <button type="button" class="btn primary-btn" onclick="Storage.resetSession()">Reset round</button>
+            <button type="button" class="btn primary-btn" onclick="Storage.resetTotals()">Reset totals</button>
+            <button id="btn-sound" type="button" class="btn default-btn" onClick="muteUnmute()" id="btn-sound"><img id="btn-sound-img" src="src/assets/img/icons/sound-icon.png"/></button>
         </div>
     </div>
 

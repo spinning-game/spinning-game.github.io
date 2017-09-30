@@ -1,8 +1,8 @@
 'use strict';
 
-function makeGetRequest(callback) {
+function makeGetRequest(url, callback) {
     var request = new XMLHttpRequest();
-    request.open('GET', 'src/assets/externalResources.json', true);
+    request.open('GET', url, true);
     var serverResponse = request.responseText;
 
     request.onload = function () {
